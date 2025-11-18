@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FitLife Gym</title>
+  <link rel="stylesheet" href="signup.css" />
+</head>
+<body>
+  <header>
+    <h2>Sign Up for FitLife Gym</h2>
+  </header>
+  <main class="backdrop">
+    <form id="signupForm">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="membership">Membership Type:</label>
+      <select id="membership" name="membership" required>
+        <option value="">Select</option>
+        <option value="Standard">Standard</option>
+        <option value="Premium">Premium</option>
+        <option value="Student">Student</option>
+      </select>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required />
+
+      <button type="submit">Create Account</button>
+    </form>
+  </main>
+</body>
+</html>
