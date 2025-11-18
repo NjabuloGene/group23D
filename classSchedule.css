@@ -1,0 +1,45 @@
+body{
+    background-color: rgb(64, 133, 133);
+    color: white;
+}
+
+h1{
+    text-align: center;
+}
+
+.bodyBuildDiv{
+    background-color: rgb(28, 70, 70);
+    height: 70px;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cardioDiv{
+    background-color: rgb(28, 70, 70);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.yogaDiv{
+    background-color: rgb(28, 70, 70);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pilatesDiv{
+    background-color: rgb(28, 70, 70);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
