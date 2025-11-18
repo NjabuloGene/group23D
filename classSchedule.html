@@ -16,6 +16,8 @@
             <ul>
                 <li>Monday 28 November</li>
             </ul>
+            <button class="bookBtn" id="bookBtn" onclick="bookClass()">BOOK</button>
+            <button class="bdyCallBtn" id="bookBtn" onclick="callBack()">request a call</button>
         </div>
         <div class="cardioDiv">
             <h3>Cardio classes</h3>
@@ -23,6 +25,8 @@
                 <li>Tuesday 29 November</li>
                 <li>Thursday 1 December</li>
             </ul>
+            <button class="bookBtn" id="cardioBookBtn">BOOK</button>
+            <button class="cardioCallBtn" id="cardioBookBtn">Call me back</button>
         </div>
         <div class="yogaDiv">
             <h3>Yoga classes</h3>
@@ -30,6 +34,8 @@
                 <li>Wednesday 30 November</li>
                 <li>Friday 2 December</li>
             </ul>
+            <button class="yogaBookBtn" id="yogaBookBtn">BOOK</button>
+            <button class="yogaCallBtn" id="yogaBookBtn">Call me back</button>
         </div>
         <div class="pilatesDiv">
             <h3>Pilates classes</h3>
@@ -37,7 +43,16 @@
                 <li>Saturday 3 December</li>
                 <li>Sunday 4 December</li>
             </ul>
+            <button class="pilatesBookBtn" id="pilatesBookBtn">BOOK</button>
+            <button class="pilatesCallBtn" id="pilatesBookBtn">Call me back</button>
+        </div>
+        <div id="myDiv">
+            <h3></h3>
+            <label>Name</label><input type="text" id="name">
+            <label>Phone Number</label><input type="text" id="phone">
+            <button onclick="submitDetails()">Submit</button>
         </div>
     </div>
+    <script src="class.js"></script>
 </body>
 </html>
