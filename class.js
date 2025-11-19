@@ -6,11 +6,12 @@ function cancelClass(){
     alert("Your class booking has been cancelled.");
 }
 
-function callBack() {
-  var x = document.getElementById("myDIV");
-  if (x.style.display === "none") {
-    x.style.display = "block";
+function visiblly(){
+  let div = document.getElementById("callBackForm");
+
+  if (div.style.display ==="none"){
+      div.style.display = "block";
   } else {
-    x.style.display = "none";
+    div.style.display = "none";
   }
 }
