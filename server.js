@@ -6,7 +6,14 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const connectionString = "Group26D";
+// IMPORTANT: full connection string needed, not file name
+const connectionString = 
+  "Driver={Microsoft Access Driver (*.mdb, *.accdb)};Dbq=C:\\Users\\450 G3\\Desktop\\database\\Group23D-GYM.accdb;";
+
+// TEST SERVER
+app.get("/", (req, res) => {
+  res.send("Server is running");
+});
 
 // ======================================================
 // GET USERS
@@ -22,31 +29,31 @@ app.get("/users", async (req, res) => {
 });
 
 // ======================================================
-// INSERT A NEW USER
+// INSERT A NEW MEMBER
 // ======================================================
-app.post("/users", async (req, res) => {
+app.post("/members", async (req, res) => {
   const { name, email, password } = req.body;
 
   try {
     const db = await odbc.connect(connectionString);
 
     const sql = `
-      INSERT INTO Users (Name, Email, Password)
+      INSERT INTO Members (fullName, Email, Password)
       VALUES (?, ?, ?)
     `;
 
     await db.query(sql, [name, email, password]);
 
-    res.json({ message: "User added successfully" });
+    res.json({ message: "Member added successfully" });
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
 });
 
 // ======================================================
-// UPDATE USER BY ID
+// UPDATE MEMBER BY ID
 // ======================================================
-app.put("/users/:id", async (req, res) => {
+app.put("/members/:id", async (req, res) => {
   const id = req.params.id;
   const { name, email, password } = req.body;
 
@@ -54,14 +61,14 @@ app.put("/users/:id", async (req, res) => {
     const db = await odbc.connect(connectionString);
 
     const sql = `
-      UPDATE Users
-      SET Name = ?, Email = ?, Password = ?
+      UPDATE Members
+      SET fullName = ?, Email = ?, Password = ?
       WHERE ID = ?
     `;
 
     await db.query(sql, [name, email, password, id]);
 
-    res.json({ message: "User updated successfully" });
+    res.json({ message: "Member updated successfully" });
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
