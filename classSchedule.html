@@ -1,80 +1,107 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="classSchedule.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>
-        Classe schedule!
-    </h1>
-    <div>
-        <div class="bodyBuildDiv">
-            <h3>Body building class</h3>
-            <ul>
-                <li>Monday 28 November</li>
-                <li>Thursday 1 December</li>
-            </ul>
+body {
+    background-color: #e6f0fa;
+    color: #1a1a1a;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
-            <select>
-                <option>28November</option>
-                <option>1December</option>
-            </select>
-            <button class="bookBtn" id="bookBtn" onclick="bookClass()">BOOK</button>
-            <button class="bdyCallBtn" id="bookBtn" onclick="visiblly()">request a call</button>
-        </div>
+h1 {
+    text-align: center;
+    color: #003366;
+    padding: 20px 0;
+    font-size: 2.5em;
+}
+.bodyBuildDiv,
+.cardioDiv,
+.yogaDiv,
+.pilatesDiv {
+    background-color: #cce0ff;
+    border-left: 8px solid #3366cc;
+    padding: 20px;
+    border-radius: 12px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 51, 102, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 
-        <div class="callBackForm">
-            <h3>Cardio classes </h3>
-            <ul>
-                <li>Tuesday 29 November</li>
-                <li>Thursday 1 December</li>
-            </ul>
+.callBackForm{
+    background-color: #cce0ff;
+    border-left: 8px solid #3366cc;
+    padding: 20px;
+    border-radius: 12px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 51, 102, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 
-            <select>
-                <option>29November</option>
-                <option>1December</option>
-            </select>
-            <button class="bookBtn" id="cardioBookBtn">BOOK</button>
-            <button class="cardioCallBtn" id="cardioBookBtn" >Call me back</button>
-        </div>
-        <div class="yogaDiv">
-            <h3>Yoga classes</h3>
-            <ul>
-                <li>Wednesday 29 November</li>
-                <li>Friday 2 December</li>
-            </ul>
+h3 {
+    margin: 0;
+    color: #003366;
+}
 
-            <select>
-                <option>30November</option>
-                <option>2December</option>
-            </select>
-            <button class="yogaBookBtn" id="yogaBookBtn">BOOK</button>
-            <button class="yogaCallBtn" id="yogaBookBtn">Call me back</button>
-        </div>
-        <div class="pilatesDiv">
-            <h3>Pilates classes</h3>
-            <ul>
-                <li>Saturday 3 December</li>
-                <li>Sunday 4 December</li>
-            </ul>
+button,
+select
+{
+    background-color: #3366cc;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
 
-            <select>
-                <option>3December</option>
-                <option>4December</option>
-            </select>
-            <button class="pilatesBookBtn" id="pilatesBookBtn">BOOK</button>
-            <button class="pilatesCallBtn" id="pilatesBookBtn" onclick="visiblly()">Call me back</button>
-        </div>
-        <div id="callBackForm" class="callBackForm" style="display:none;">
-            <h3>call back details</h3>
-            <label>Name</label><input type="text" id="name">
-            <label>Phone Number</label><input type="text" id="phone">
-            <button onclick="submitDetails()">Submit</button>
-        </div>
-    </div>
-    <script src="class.js"></script>
-</body>
-</html>
+
+button:hover {
+    background-color: #254b9e;
+}
+
+#callBackForm {
+    background-color: #f0f8ff;
+    border: 2px solid #99c2ff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 30px auto;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 2px 6px rgba(0, 51, 102, 0.1);
+    align-self: center;
+    align-items: center;
+    margin-top: -200px;
+    
+}
+
+.callBackForm::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#callBackForm{
+    z-index: 30;
+}
+
+#callBackForm label {
+    display: block;
+    margin-top: 10px;
+    font-weight: 600;
+    color: #003366;
+}
+
+#callBackForm input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #99c2ff;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
