@@ -1,10 +1,21 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: lightsteelblue;
+  background-color: lightblue;
   margin: 0;
   padding: 0;
   color: snow;
+}
+
+body{
+ background-image: url(https://images.pexels.com/photos/1229356/pexels-photo-1229356.jpeg?cs=srgb);
+ height: 100vh;
+ background-size: cover;
+ background-position: center;
+ margin: 0;
+ padding: 0;
+ text-align: center;
+
 }
 
 main {

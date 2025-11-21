@@ -6,15 +6,24 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #667eea41 0%, #764ba248 100%);
     min-height: 100vh;
     padding: 2rem;
-    color: #333;
+    color: #333333d0;
 }
 
+body{
+    background-image:url(https://png.pngtree.com/background/20230516/original/pngtree-large-room-full-of-equipment-in-a-gym-picture-image_2611111.jpg);
+    hieght:100vh ;
+    background-size:cover;
+    background-position:center;
+    margin:0;
+    padding:0;
+    text-allign:center;
+}
 h1 {
     text-align: center;
-    color: white;
+    color: rgba(255, 255, 255, 0.884);
     font-size: 2.5rem;
     margin-bottom: 3rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
@@ -33,7 +42,7 @@ body > div {
 .yogaDiv,
 .pilatesDiv,
 .callBackForm:not(#callBackForm) {
-    background: white;
+    background: rgba(255, 255, 255, 0.842);
     border-radius: 16px;
     padding: 2rem;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
@@ -45,11 +54,11 @@ body > div {
 .pilatesDiv:hover,
 .callBackForm:not(#callBackForm):hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.774);
 }
 
 h3 {
-    color: #667eea;
+    color: #667eeada;
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
     padding-bottom: 0.5rem;
@@ -66,7 +75,7 @@ li {
     margin-bottom: 0.5rem;
     background: #f8f9fa;
     border-radius: 8px;
-    border-left: 4px solid #667eea;
+    border-left: 4px solid #667eeadc;
     transition: background 0.3s ease;
 }
 
@@ -78,17 +87,17 @@ select {
     width: 100%;
     padding: 0.875rem;
     margin-bottom: 1rem;
-    border: 2px solid #e0e0e0;
+    border: 2px solid #e0e0e0d8;
     border-radius: 8px;
     font-size: 1rem;
-    background: white;
+    background: rgba(255, 255, 255, 0.918);
     cursor: pointer;
     transition: border-color 0.3s ease;
 }
 
 select:focus {
     outline: none;
-    border-color: #667eea;
+    border-color: #667eeae7;
 }
 
 button {
@@ -116,15 +125,15 @@ button {
 .yogaBookBtn:hover,
 .pilatesBookBtn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.856);
 }
 
 .bdyCallBtn,
 .cardioCallBtn,
 .yogaCallBtn,
 .pilatesCallBtn {
-    background: white;
-    color: #667eea;
+    background: rgba(255, 255, 255, 0.801);
+    color: #667eeade;
     border: 2px solid #667eea;
 }
 
@@ -133,7 +142,7 @@ button {
 .yogaCallBtn:hover,
 .pilatesCallBtn:hover {
     background: #667eea;
-    color: white;
+    color: rgba(255, 255, 255, 0.945);
     transform: translateY(-2px);
 }
 
@@ -142,7 +151,7 @@ button {
     background: white;
     border-radius: 16px;
     padding: 2rem;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.856);
     max-width: 500px;
     margin: 0 auto;
     width: 100%;

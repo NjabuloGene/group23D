@@ -4,6 +4,16 @@ body {
     background-color: #f0f0f0;
 }
 
+body{
+    background-image: url(https://img.freepik.com/premium-photo/training-exercise-motivation-with-fitness-coach-personal-trainer-her-bodybuilder-student-during-workout-gym-health-sports-wellness-with-heathy-athlete-exercising_590464-78695.jpg?w=2000);
+    height: 100vh;
+    background-size: cover;
+    background-position:center ;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
 .container {
     width: 300px;
     margin: 50px auto;
@@ -11,7 +21,7 @@ body {
     border: 1px solid #ccc;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
+    background-color: #3a343425;
 }
 
 h1 {
